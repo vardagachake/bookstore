@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("imgaedss/JSHDKJHA.jpg");
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.container {
+    width: 400px;
+    padding: 30px;
+    border-radius: 50px;
+    background-image: url("imgaedss/JSHDKJHA.jpg");
+    color: aliceblue;
+}

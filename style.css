@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    font-size: 400%;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    background-image: url("imgaedss/books-lying-ladder-bookstore.jpg");
+    background-size: cover;
+    border-radius : 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.bg-img {
+    background-image: url("imgaedss/good-books-library.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain ;
+}
+
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 150px;
+  }

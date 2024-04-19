@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("imgaedss/dgkueawyhdqwylq.jpg");
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.container {
+    width: 400px;
+    padding: 30px;
+    border-radius: 50px;
+    background-image: url("imgaedss/meow2.jpg");
+
+    color: black;
+    font-size: 125% ;
+}
