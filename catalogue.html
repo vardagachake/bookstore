@@ -2,39 +2,18 @@
  <html>
 <head>
     <title>
-        BookStop
+        Pages of Dreams
     </title>
     <link rel="stylesheet" href="catalogue.css">
     <link rel="icon" href=
-"https://cdn-icons-png.flaticon.com/512/2232/2232688.png"
-          type="image/x-icon">
+    "images/registration.png"
+              type="image/x-icon">
 </head>
   <style>
-    label {
-        font-weight: bold;
-        font-size: 16px;
-        color:#FFFFFF;
-        margin-bottom: 8px;
-        display: block;
-        }
-        
-        select {
-        font-size: 16px;
-        padding: 20px;
-        
-        }
-        
-        #capital {
-        font-size: 20px;
-        font-weight: bold;
-        color: #FFFFFF;
-        margin-top: 10px;
-        }
-
-   .centred{
-        text-align: center;
-      }
-
+    .lable{
+    font-family: candara;
+    border-radius: 25px;
+}
     </style>
 <body>
     <header class = "heading">
@@ -43,35 +22,145 @@
     <div class ="bg-img">
     <div class = "centred">
      <br><br>
-      <label for="companySelect">Select a Book Series:</label><br>
-<select id="companySelect" onchange="displayCapital()">
-<option value="HP">Harry Potter</option>
-<option value="pj">Percy Jackson</option>
-<option value="hg">Hunger Games</option>
-</select><br><br>
+      
 
 <div id="capital"></div>
     </div>
-
-<script>
-function displayCapital() {
-var select = document.getElementById("companySelect");
-var capitalDiv = document.getElementById("capital");
-
-var selectedCompany = select.options[select.selectedIndex].text;
-
-// You can replace the capital values with the actual capital for each company
-var capitalMap = {
-"Harry Potter": "1. Harry Potter and the Sorcerer’s Stone (1997)"+"\n"+"2. Harry Potter and the Chamber of Secrets (1998)\n3. Harry Potter and the Prisoner of Azkaban (1999)\n4. Harry Potter and the Goblet of Fire (2000)\n5. Harry Potter and the Order of the Phoenix (2003)\n6. Harry Potter and the Half-Blood Prince (2005)\n7. Harry Potter and the Deathly Hallows (2007)\n8. Harry Potter and the Cursed Child (2016)",
-"Percy Jackson": "1. The Lightning Thief (2005) · 2. The Sea of Monsters (2006) · 3. The Titan's Curse (2007)",
-"Hunger Games": "1. The Hunger Games · 2. The Hunger Games: Catching Fire · 3. The Hunger Games: Mockingjay · 4. The Ballad of Songbirds and Snakes.",
-};
-
-var capital = capitalMap[selectedCompany];
-capitalDiv.textContent = capital;
-}
-</script>
-    </div>
-
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Book Catalogue</title>
+      
+    </head>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Books Grid</title>
+      <style>
+        /* Basic CSS for styling */
+        *{
+            color: black;
+            font-family: candara;
+        }
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+          grid-gap: 20px;
+        }
+        .book {
+          border:none;
+          padding: 20px;
+          text-align: center;
+        }
+        .book img {
+          max-width: 100%;
+          height: auto;
+        }
+        .book-title {
+          font-weight: bold;
+          margin-top: 10px;
+        }
+        
+        p{
+            color:black;
+        }
+        .price {
+          color:black;
+        }
+    
+      </style>
+    </head>
+    <body>
+      <div class="grid-container">
+        <!-- Book 1 -->
+        <div class="book">
+          <a href="https://www.amazon.in/Golden-Geronimo-Stilton-Kingdom-Fantasy/dp/1338848003"><img class="img1" src="imgaedss/bookstore1.jpg" alt="Book 1" width="186px" height="271px"></a>
+          <div class="book-details">
+            <h2 class="book-title"> The Golden Key</h2>
+            <p class="author">Elizibetha Dami</p>
+            <p class="price">₹300</p>
+            
+          </div>
+        </div>
+        <!-- Book 2 -->
+        <div class="book">
+            <a href="https://www.amazon.in/s?k=reporter+geronimo+stitlton&i=stripbooks&crid=1KPK646N786YR&sprefix=reporter+geronimo+stitlton%2Cstripbooks%2C206&ref=nb_sb_noss"><img class="img1" src="imgaedss/bookstore2.jpg" alt="Book 2" width="186px" height="271px"></a>
+          <div class="book-details">
+            <h2 class="book-title">Reporter</h2>
+            <p class="author">Elizibetha Dami</p>
+            <p class="price">₹500</p>
+            
+          </div>
+        </div>
+        <div class="book">
+            <a href="https://www.amazon.in/Geronimo-Stilton-64-Magical-Mission/dp/9386106256/ref=sr_1_1?crid=1155TSMTZF8TM&dib=eyJ2IjoiMSJ9.UJe2z0B3GXNyXHnXYXwislVnAmLZT-v-YcGTjisNu_lPDEa6AQWLv1twsaJ29SbKI7qsMkcY83KZnapcIVby9siax0b_q8EwI8TV6qEA_KSSAFPBgTI9lBjRb4sBygNQo8_mMIelYPrS-axz5dUUofBmy1GE884HonvyW7esdxZ8ikItYVEHn0RCBn5lHb2lBu2X4ogK8EC6tkz5xh6skUUDfaJ3mmy2eeHQC-w74Yo.53dhH5JMqPoUti1OyC6u9lov5PRxIqfrB1FIqtHLA4s&dib_tag=se&keywords=magical+mission+geronimo+stilton&qid=1713718892&s=books&sprefix=magical+mission+geronimo+stilton%2Cstripbooks%2C197&sr=1-1"><img class="img1" src="imgaedss/bookstore3.jpg" alt="Book 3" width="186px" height="271px"></a>
+            <div class="book-details">
+              <h2 class="book-title">Magical Mission</h2>
+              <p class="author">Elizibetha Dami</p>
+              <p class="price">₹400</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <a href="https://www.amazon.in/GERONIMO-STILTON-KINGDOM-FANTASY-SPECIAL/dp/9352751183/ref=sr_1_2?crid=Z3QDTJP6KRY&dib=eyJ2IjoiMSJ9.JO0UBko3fewDuPiGblH0oEK-cFFjghklbk2r-N8b8tPNCaSCYOCxbjVHgM1YWTkL4R3n_UJxQDdRJxmrCdtHpYrKQWVwjKxh2Pb5aYQ8TusbiSwXeY38dFoqJCp-155I6x6YmsHYL9MHcitJurmnqGz0T-qW7v5mnJfpkG1eBncSTcCbGs_loJSr7MezEDxCuqbyphStGVYtSIp9e0DXZRrkobnuBEgIWiC9KGrjmyQ.ixumkpshN6JcIZOr5o4mblH9JTdazczotP_AcbXRlZo&dib_tag=se&keywords=the+dragon+of+fortune+geronimo+stilton&qid=1713718962&s=books&sprefix=the+dragon+of+fortune+geronimo+stilton%2Cstripbooks%2C198&sr=1-2"><img class="img1" src="imgaedss/bookstore4.jpg" alt="Book 4" width="186px" height="271px"></a>
+            <div class="book-details">
+              <h2 class="book-title">The Dragon Of Fortune</h2>
+              <p class="author">Elizibetha Dami</p>
+              <p class="price">₹600</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <a href="https://www.amazon.in/Way-Samurai-49-Geronimo-Stilton/dp/0545341019/ref=sr_1_2?crid=G9JCWGXE9XS6&dib=eyJ2IjoiMSJ9.RY1fkh0_Hihww0HwnGXZ6lrIEpZnEbYGru0q-EIl_yiI3rYZAquafGgjFbLCI4-vZk12DuJTdT9EkXugtPUqqzbHBKN8a4BovlVCagFCYn_PCypXSEpzAjvb7vk6W7kwg5oo8e_IkWiLJ_pqruj1_Y-SWl4exMnRZwQWoYBwFbq0RyOZV6pWoM1jnTe0oV_dPjnqK3sLbyzKzcbtHO4TFFxUvsnweMWS1O7dRaR0ucw.IzOFtW935nJOMOxFnAnfVCNAMyK3JAVE2WdRXokVhqE&dib_tag=se&keywords=the+way+of+the+samurai+geronimo+stilton&qid=1713719016&s=books&sprefix=the+way+of+the+samurai+geronimo+stilton%2Cstripbooks%2C209&sr=1-2"><img class="img1" src="imgaedss/bookstore5.jpg" alt="Book 5" width="186px" height="271px"></a>
+            <div class="book-details">
+              <h2 class="book-title">The Way Of The Samurai</h2>
+              <p class="author">Elizibetha Dami</p>
+              <p class="price">₹200</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <a href="https://www.amazon.in/Geronimo-Stilton-Kingdom-Fantasy-11/dp/1338215019/ref=sr_1_1_sspa?crid=2OP8WF0TA2ATE&dib=eyJ2IjoiMSJ9.IMRc3PBK67fatP61KipOpBXgNqK38EvMZITsuedIv3A9xgDVxqL4LThYDVR93yp0vCSq3boPGHIpKqxORsfCiG_Si1DppEjnE5uB0FmdJbkfZggx8zmeUb5VMDYr-Mh8QBlwjaGyGBBtWE5tMnu-YbsPBqBtlY1gzMCmDREyWh2hlnVZYTnYlNr0JyoxnZy9TeHyQf8QikcvX60Hhvdpw1mioDHS7bjD1gZ85hriYnY.uAmvbJ5_32Fqlk1DIe0hgCeXw2Q6DNJilhqwPlL-njM&dib_tag=se&keywords=the+guardian+of+the+realm+geronimo+stilton&qid=1713719086&s=books&sprefix=the+guardian+of+the+realm+geronimo+stilton%2Cstripbooks%2C198&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><img class="img1" src="imgaedss/bookstore6.webp" alt="Book 6" width="186px" height="271px"></a>
+            <div class="book-details">
+              <h2 class="book-title">The Guardian Of The Realm</h2>
+              <p class="author">Elizibetha Dami</p>
+              <p class="price">₹600</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <a href=""><img class="img1" src="imgaedss/bookstore7.jpg" alt="Book 7" width="186px" height="271px"></a>
+            <div class="book-details">
+              <h2 class="book-title">Bollywood Burglary</h2>
+              <p class="author">Elizibetha Dami</p>
+              <p class="price">₹900</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <a href="https://www.amazon.in/Geronimo-Stilton-65-Bollywood-Burglary/dp/9352755189/ref=sr_1_1?crid=1XB1TC9SXHDSK&dib=eyJ2IjoiMSJ9.MaLIie_QwZmUWxZRk--U9YV2ppo2qq1cqbkbGg525l0vGaLg_aw-D_9H9-H62eDwd_MrrRynvsxjagIqBKFbArCUt6KxFD6NrAqfOGCC7xGoPz-KMFBNM3GQnMkEoE88H6lCCDkpDhWlVep4L6e_QJRou7F7mhibN-j3vw2RPZgNxVuop3-J-wJdcqJR9R2hLxrRutbMdJ0UYyBxhkgILrjrU2tTagOGOmmgt5Dg5-U.Wsauw4G4pCM3t-uN8wV4p7-yYOxMiZHE8ZjaY2-rzZY&dib_tag=se&keywords=Bollywood+Burglary+geronimo+stilton&qid=1713719174&s=books&sprefix=bollywood+burglary+geronimo+stilton%2Cstripbooks%2C206&sr=1-1"><img class="img1" src="imgaedss/bookstore8.jpg" alt="Book 8" width="186px" height="271px"></a>
+            <div class="book-details">
+              <h2 class="book-title">The Super Scam</h2>
+              <p class="author">Elizibetha Dami</p>
+              <p class="price">₹300</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <a href="https://www.amazon.in/Geronimo-Stilton-Secret-Agent-34/dp/0545021340/ref=sr_1_1?crid=30SB8RK06IED7&dib=eyJ2IjoiMSJ9.Cn8Dnhw88RdKocPSwkLObquGNqs4h7D7e5Vtf44Y7bTXdNI4wqAlqUMj_a6oYAP8uTRYb2sMoN-hss02vMWCEGj08fKmqWiZjErzDTv9r_lru6rJFnTZFaArwcJxJLDiB0lb8ZuWxEhFDRKdow0qvrPDiywA9TxLnjeOyNh9hQVI4azceNgwT0cCWpIDaI3-wIhCmoBd7DlPxjbfiK_T7G4cm5PhTUFe3PCgW9jsRwg.APXpZ6uZVyAHqGP6vFUdc_JQU8fORm3uk6fakSUTJ_U&dib_tag=se&keywords=Secret+Agent+geronimo+stilton&qid=1713719217&s=books&sprefix=secret+agent+geronimo+stilton%2Cstripbooks%2C225&sr=1-1"><img class="img1" src="imgaedss/bookstore9.jpg" alt="Book 9" width="186px" height="271px"></a>
+            <div class="book-details">
+              <h2 class="book-title">Secret Agent</h2>
+              <p class="author">Elizibetha Dami</p>
+              <p class="price">₹350</p>
+              
+            </div>
+          </div>
+       
+        <!-- Add more books as needed -->
+      </div>
+    </body>
+    </html>
+    
